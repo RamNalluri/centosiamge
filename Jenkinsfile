@@ -1,6 +1,6 @@
 pipeline { 
     environment { 
-        registry = "https://hub.docker.com/repository/docker/rambabunalluri/mycentos" 
+        registry = "rambabunalluri/mycentos" 
         registryCredential = 'dockerhub_id' 
         dockerImage = '' 
     }
