@@ -1,11 +1,3 @@
-[root@localhost ~]# cd /home/centos
-[root@localhost centos]# vi dockerfile1
-FROM centos:8
+FROM node:16.13.1-alpine
 
-LABEL maintainer="rambabu.nalluri@gmail.com"
-RUN dnf update -y
-RUN dnf upgrade -y
-RUN dnf install epel-release -y
-RUN dnf install nginx -y
-EXPOSE 81
-CMD ["nginx", "-g", "daemon off;"]
+RUN apk add -U subversion
